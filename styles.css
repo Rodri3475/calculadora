@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+    margin: 0;
+}
+
+.calculadora {
+    background: #333;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    width: 260px;
+}
+
+.pantalla {
+    background: #fff;
+    font-size: 2rem;
+    padding: 10px;
+    text-align: right;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    padding: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: #e0e0e0;
+}
+
+.btn:hover {
+    background: #d4d4d4;
+}
+
+/* Teclado numérico */
+
+.cero {
+    grid-column: span 2;
+}
+
+.suma {
+    grid-row: span 2;
+}
+
+.igual {
+    grid-row: span 2;
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+.equal {
+    grid-row: span 2;
+}
+
+.equal {
+    background: #ff9500;
+    color: white;
+}
+
+.equal:hover {
+    background: white;
+    color: #ff9500;
+}
+
+.restar,
+.dividir,
+.multiplicar {
+    background: #a5a5a5;
+}
