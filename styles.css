@@ -125,4 +125,9 @@ body {
             transform: translateX(-3px);
         }
     }
+    .btn {
+        padding: 10px;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
 }
